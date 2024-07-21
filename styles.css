@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.links {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.links a:hover {
+    color: lightgray;
+    transform: scale(1.1);
+}
+
+img {
+    width: 200px;
+    margin-top: 100px; 
+}
+
+.text {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 300px; 
+    text-align: center;
+}
+
+.form-container .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; 
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+}
+
+.form-container .close-btn:hover {
+    color: lightgray;
+}
+
+.form-container input, .form-container button {
+    display: block;
+    width: calc(100% - 20px); 
+    margin: 10px auto; 
+    padding: 10px; 
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container input {
+    background: white;
+    color: black;
+    font-size: 16px; 
+}
+
+.form-container button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; 
+    padding: 10px; 
+    border: 2px solid white; 
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.form-container button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1); 
+}
+
